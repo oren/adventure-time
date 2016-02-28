@@ -1,0 +1,10 @@
+character:finn type human .
+character:finn name Finn .
+character:finn born 1991 .
+character:finn "lives in" country:canada .
+character:finn "in love with" character:princess-bubblegum .
+
+character:princess-bubblegum type not-human .
+character:princess-bubblegum name "Princess Bubblegum" .
+character:princess-bubblegum born 1993 .
+character:princess-bubblegum "lives in" country:canada .
