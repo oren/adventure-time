@@ -1,10 +1,61 @@
 character:finn type human .
 character:finn name Finn .
-character:finn born 1991 .
-character:finn "lives in" country:canada .
-character:finn "in love with" character:princess-bubblegum .
+character:finn age 16 .
+character:finn "has a crush on" character:princess-bubblegum .
+character:finn "friend of" character:jake .
+character:finn "friend of" character:bmo .
+character:finn "lives with" character:jake .
+character:finn "lives with" character:bmo .
+
+character:jake type dog .
+character:jake type shape-shifter .
+character:jake name "Jake the Dog" .
+character:jake "friend of" "character:finn" .
+character:jake "friend of" "character:bmo" .
+character:jake "lives with" "character:finn" .
+character:jake "lives with" "character:bmo" .
+character:jake "afraid of" "character:marceline-abadeer" .
+
+character:bmo type MO .
+character:bmo name BMO .
+character:bmo "friend of" character:finn .
+character:bmo "friend of" character:jake .
+character:bmo "lives with" character:finn .
+character:bmo "lives with" character:jake .
+character:bmo "is" "video game console" .
+character:bmo "is" "portable electrical outlet" .
+character:bmo "is" "music player" .
+character:bmo "is" "camera" .
+character:bmo "is" "alarm clock" .
+character:bmo "is" "toaster" .
+character:bmo "is" "flashlight" .
+character:bmo "is" "skateboarder" .
+character:bmo "is" "soccer player" .
+character:bmo "is" "chef" .
 
 character:princess-bubblegum type not-human .
 character:princess-bubblegum name "Princess Bubblegum" .
-character:princess-bubblegum born 1993 .
-character:princess-bubblegum "lives in" country:canada .
+character:princess-bubblegum "friend of" character:lady-rainicorn .
+character:princess-bubblegum "friend of" character:lumpy-space-princess .
+
+character:ice-king type wizard .
+character:bmo name "Ice King" .
+character:finn age 1043 .
+character:ice-king "has a crush on" character:princess-bubblegum .
+character:ice-king "has a crush on" character:marceline-abadeer .
+
+character:lumpy-space-princess type "Lumpy Space Person" .
+character:lumpy-space-princess name "Lumpy Space Princess" .
+character:lumpy-space-princess "has a crush on" character:finn .
+
+character:lady-rainicorn type Rainicorn .
+character:lady-rainicorn "in love with" character:jake .
+character:lady-rainicorn "friend of" character:princess-bubblegum .
+character:lady-rainicorn "dating" character:jake .
+character:lady-rainicorn "speaks" korean .
+
+character:marceline-abadeer type Vampire .
+character:marceline-abadeer type "Human/Demon" .
+character:marceline-abadeer name "Marceline Abadeer" .
+character:marceline-abadeer age 1003 .
+character:marceline-abadeer "friend of" character:finn .

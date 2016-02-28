@@ -17,10 +17,22 @@ cayley http --config=cayley.cfg -assets /home/oren/p/go/src/github.com/google/ca
 cayley repl --config=cayley.cfg
 ```
 
-Query
+## Queries
+
+Who does Finn love?
 
 ```
-g.V("character:finn").Out("in love with").All()
+g.V("character:finn").Out("has a crush on").All()
 ```
 
+Who is being crushed?
 
+```
+g.V().Out("has a crush on").All()
+```
+
+Who lives with someone?
+
+```
+g.V().Tag("character").Out("lives with").All()
+```
