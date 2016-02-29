@@ -6,6 +6,7 @@ character:finn "friend of" character:jake .
 character:finn "friend of" character:bmo .
 character:finn "lives with" character:jake .
 character:finn "lives with" character:bmo .
+character:finn "hates" character:ice-king .
 
 character:jake type dog .
 character:jake type shape-shifter .
@@ -15,6 +16,7 @@ character:jake "friend of" "character:bmo" .
 character:jake "lives with" "character:finn" .
 character:jake "lives with" "character:bmo" .
 character:jake "afraid of" "character:marceline-abadeer" .
+character:jake "hates" character:ice-king .
 
 character:bmo type MO .
 character:bmo name BMO .
@@ -32,30 +34,36 @@ character:bmo "is" "flashlight" .
 character:bmo "is" "skateboarder" .
 character:bmo "is" "soccer player" .
 character:bmo "is" "chef" .
+character:bmo "hates" character:ice-king .
 
-character:princess-bubblegum type not-human .
+character:princess-bubblegum type "Candy People" .
 character:princess-bubblegum name "Princess Bubblegum" .
 character:princess-bubblegum "friend of" character:lady-rainicorn .
 character:princess-bubblegum "friend of" character:lumpy-space-princess .
+character:princess-bubblegum "hates" character:ice-king .
 
 character:ice-king type wizard .
 character:bmo name "Ice King" .
 character:finn age 1043 .
 character:ice-king "has a crush on" character:princess-bubblegum .
 character:ice-king "has a crush on" character:marceline-abadeer .
+character:ice-king "kindnapped" character:princess-bubblegum .
 
 character:lumpy-space-princess type "Lumpy Space Person" .
 character:lumpy-space-princess name "Lumpy Space Princess" .
 character:lumpy-space-princess "has a crush on" character:finn .
+character:lumpy-space-princess "hates" character:ice-king .
 
 character:lady-rainicorn type Rainicorn .
 character:lady-rainicorn "in love with" character:jake .
 character:lady-rainicorn "friend of" character:princess-bubblegum .
 character:lady-rainicorn "dating" character:jake .
 character:lady-rainicorn "speaks" korean .
+character:lady-rainicorn "hates" character:ice-king .
 
 character:marceline-abadeer type Vampire .
 character:marceline-abadeer type "Human/Demon" .
 character:marceline-abadeer name "Marceline Abadeer" .
 character:marceline-abadeer age 1003 .
 character:marceline-abadeer "friend of" character:finn .
+character:marceline-abadeer "hates" character:ice-king .
