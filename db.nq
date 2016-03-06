@@ -43,8 +43,8 @@ character:princess-bubblegum "friend of" character:lumpy-space-princess .
 character:princess-bubblegum "hates" character:ice-king .
 
 character:ice-king type wizard .
-character:bmo name "Ice King" .
-character:finn age 1043 .
+character:ice-king name "Ice King" .
+character:ice-king age 1043 .
 character:ice-king "has a crush on" character:princess-bubblegum .
 character:ice-king "has a crush on" character:marceline-abadeer .
 character:ice-king "kidnapped" character:princess-bubblegum .
