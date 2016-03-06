@@ -67,4 +67,4 @@ character:marceline-abadeer type "Human/Demon" .
 character:marceline-abadeer name "Marceline Abadeer" .
 character:marceline-abadeer age 1003 .
 character:marceline-abadeer "friend of" character:finn .
-"character:marceline-abadeer "hates" character:ice-king .
+character:marceline-abadeer "hates" character:ice-king .
