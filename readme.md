@@ -13,8 +13,8 @@ Run
 ```
 cayley init --config=cayley.cfg
 cayley load --config=cayley.cfg --quads=db.nq
-cayley http --config=cayley.cfg -assets /home/oren/p/go/src/github.com/google/cayley/
 cayley repl --config=cayley.cfg
+cayley http --config=cayley.cfg
 ```
 
 ## Queries
