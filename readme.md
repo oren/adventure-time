@@ -19,20 +19,136 @@ cayley http --config=cayley.cfg
 
 ## Queries
 
-Who does Finn love?
+Find everyone that Ice King has a crush on
 
 ```
-g.V("character:finn").Out("has a crush on").All()
+g.V("character:ice-king").Out("has a crush on").All()
+
+{
+  "result": [ {
+      "id": "character:marceline-abadeer"
+    },
+    {
+    "id": "character:princess-bubblegum"
+    }
+  ]
+}
 ```
 
-Who is being crushed?
+Find everyone that have a crush on Princess Bubblegum
 
 ```
-g.V().Out("has a crush on").All()
+g.V("character:princess-bubblegum").In("has a crush on").All()
+
+{
+  "result": [ {
+      "id": "character:ice-king"
+    }
+  ]
+}
 ```
 
-Who lives with someone?
+Find all the haters
 
 ```
-g.V().Tag("character").Out("lives with").All()
+g.V().In("hates").All()
+
+{
+  "result": [
+    {
+    "id": "character:lumpy-space-princess",
+    },
+    {
+    "id": "character:bmo",
+    },
+    {
+    "id": "character:marceline-abadeer",
+    },
+    {
+    "id": "character:finn",
+    },
+    {
+    "id": "character:lady-rainicorn",
+    },
+    {
+    "id": "character:princess-bubblegum",
+    },
+    {
+    "id": "character:jake",
+    }
+  ]
+}
+```
+
+Find all the haters (and tag who they hate)
+
+```
+g.V().Tag("name").In("hates").All()
+
+{
+"result": [
+  {
+  "id": "character:lumpy-space-princess",
+  "name": "character:ice-king"
+  },
+  {
+  "id": "character:bmo",
+  "name": "character:ice-king"
+  },
+  {
+  "id": "character:marceline-abadeer",
+  "name": "character:ice-king"
+  },
+  {
+  "id": "character:finn",
+  "name": "character:ice-king"
+  },
+  {
+  "id": "character:lady-rainicorn",
+...
+```
+
+Who hates Ice King?
+
+```
+g.V().Has("hates", "character:ice-king"").All()
+
+{
+  "result": [
+    {
+    "id": "character:lumpy-space-princess"
+    },
+    {
+    "id": "character:bmo"
+    },
+    {
+    "id": "character:marceline-abadeer"
+    },
+    {
+    "id": "character:finn"
+    },
+    {
+    "id": "character:lady-rainicorn"
+    },
+    {
+    "id": "character:princess-bubblegum"
+```
+
+Find all haters that lives with BMO
+
+```
+haters = g.V().In("hates")
+lives_with_bmo = g.V("character:bmo").In("lives with")
+haters.And(lives_with_bmo).All()
+
+{
+  "result": [
+    {
+    "id": "character:finn"
+    },
+    {
+    "id": "character:jake"
+    }
+  ]
+}
 ```
