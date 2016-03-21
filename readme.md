@@ -22,6 +22,7 @@ cd cayley
 go get github.com/tools/godep
 godep restore
 go build ./cmd/cayley
+cp ./cayley /usr/local/bin
 ```
 
 Run
