@@ -1,11 +1,28 @@
 # adventure-time
 
-Install Cayley
+Install Cayley for Linux Destro
 
 ```
 curl -L https://github.com/google/cayley/releases/download/v0.4.1/cayley_0.4.1_linux_amd64.tar.gz | tar xz
 sudo cp cayley_0.4.1_linux_amd64/cayley /usr/local/bin/
 rm -r cayley_0.4.1_linux_amd64
+```
+
+
+Install Cayley from source
+
+```
+mkdir -p ~/cayley && cd ~/cayley
+export GOPATH=`pwd`
+export PATH=$PATH:~/cayley/bin
+mkdir -p bin pkg src/github.com/google
+cd src/github.com/google
+git clone https://github.com/google/cayley
+cd cayley
+go get github.com/tools/godep
+godep restore
+go build ./cmd/cayley
+cp ./cayley /usr/local/bin
 ```
 
 Run
